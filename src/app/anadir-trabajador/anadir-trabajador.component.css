@@ -1,0 +1,28 @@
+.mat-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Esto ajusta la altura al 100% del viewport */
+  }
+  
+  .form-container {
+    width: 50%; /* Ancho del contenedor del formulario */
+    text-align: center; /* Para centrar el título y el contenido */
+  }
+  
+  h2 {
+    margin-bottom: 20px; /* Agrega margen inferior al título */
+  }
+  
+
+  
+  
+  .form-container {
+    width: 50%;
+    text-align: center;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  

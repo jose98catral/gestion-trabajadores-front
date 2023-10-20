@@ -1,0 +1,48 @@
+.mat-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  
+  .form-container {
+    width: 75%;
+    max-width: 600px; /* Ajusta este valor según tus preferencias */
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco o el color deseado */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+  
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  .form-field {
+    display: inline-block;
+    margin-right: 30px;
+  }
+  .form-field-full{
+   
+    margin-right: 30px;
+  }
+  .square-avatar {
+    width: 150px; /* Define el ancho del cuadrado */
+    height: 150px; /* Define la altura del cuadrado */
+    border: 2px solid #ccc; /* Agrega un borde */
+    background: #f0f0f0; /* Establece un fondo gris claro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el cuadrado */
+    background-position: center; /* Ajusta la posición de la imagen al centro del cuadrado */
+  }
+  
+  

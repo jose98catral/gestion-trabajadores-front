@@ -1,0 +1,35 @@
+<!-- header.component.html -->
+<mat-toolbar color="primary">
+    <mat-toolbar-row class="header-row">
+      <div class="left-content">
+        <button mat-button [matMenuTriggerFor]="menu">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item  routerLink="/tareas">
+            Tareas
+          </button>
+          <button mat-menu-item routerLink="/añadirTrabajador">
+            Añadir Trabajador
+          </button>
+          <button mat-menu-item routerLink="/tareasTrabajador" >
+            Mostrar tareas
+          </button>
+          <button mat-menu-item routerLink="/calendario" >
+            Mostrar Calendario
+          </button>
+          <button mat-menu-item >
+            Mostrar Horarios
+          </button>
+        </mat-menu>
+      </div>
+      <div class="right-content">
+        <!-- <img src="user-avatar.jpg" alt="User Avatar" class="user-avatar" /> -->
+        <button mat-icon-button class="edit-button">
+          <mat-icon>edit</mat-icon>
+        </button>
+        <span class="user-name" ><a routerLink="/modificarUsuario">Nombre del Usuario</a></span>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  

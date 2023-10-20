@@ -1,0 +1,60 @@
+<app-header></app-header>
+<mat-card class="mat-card-container">
+    <form [formGroup]="perfilForm" (ngSubmit)="onSubmit()">
+      <div>
+        <div class="form-field">
+        <mat-form-field class="full-width">
+          <label for="nombre">Nombre:</label>
+          <input matInput type="text" id="nombre" formControlName="nombre">
+        </mat-form-field>
+      </div>
+      <div class="form-field">
+        <mat-form-field class="full-width">
+          <label for="apellido">Apellido:</label>
+          <input matInput type="text" id="apellido" formControlName="apellido">
+        </mat-form-field>
+      </div>
+    </div>
+    <div>
+      <div class="form-field">
+        <mat-form-field class="full-width">
+          <label for="email">Email:</label>
+          <input matInput type="email" id="email" formControlName="email">
+        </mat-form-field>
+      </div>
+      <div class="form-field">
+        <mat-form-field class="full-width">
+          <label for="telefono">Teléfono:</label>
+          <input matInput type="tel" id="telefono" formControlName="telefono">
+        </mat-form-field>
+      </div>
+    </div>
+    <div>
+      <div class="form-field">
+        <mat-form-field class="full-width">
+          <label for="contrasena">Contraseña:</label>
+          <input matInput type="password" id="contrasena" formControlName="contrasena">
+        </mat-form-field>
+      </div>
+      <div class="form-field">
+        <mat-form-field class="full-width">
+          <label for="nuevaContrasena">Nueva Contraseña:</label>
+          <input matInput type="password" id="nuevaContrasena" formControlName="nuevaContrasena">
+        </mat-form-field>
+      </div>
+    </div>
+    <div>
+      <div class="form-field-full">
+        <div class="square-avatar" [ngStyle]="{ 'background-image': 'url(' + avatarUrl + ')' }"></div>
+
+        <label for="imagenPerfil">Imagen de Perfil:</label>
+        <input type="file" id="imagenPerfil" (change)="onImageChange($event)">
+      </div>
+      
+        
+    </div>
+     
+      <button mat-raised-button color="primary" type="submit">Guardar</button>
+    </form>
+  </mat-card>
+  <app-footer></app-footer>

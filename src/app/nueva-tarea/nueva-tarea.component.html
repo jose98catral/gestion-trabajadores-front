@@ -1,0 +1,57 @@
+<app-header></app-header>
+<mat-card class="mat-card-container">
+  <mat-card-header>
+    <mat-card-title>Crear Nueva Tarea</mat-card-title>
+  </mat-card-header>
+  <form [formGroup]="tareaForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <div>
+        <div class="form-field">
+          <mat-form-field class="full-width">
+            <label for="nombre">Nombre de la Tarea:</label>
+            <input matInput type="text" id="nombre" formControlName="nombre">
+          </mat-form-field>
+        </div>
+        <div class="form-field">
+          <mat-form-field class="full-width">
+            <label for ="empresa">Nombre de la Empresa:</label>
+            <input matInput type="text" id="empresa" formControlName="empresa">
+          </mat-form-field>
+        </div>
+      </div>
+      <div>
+        <div class="form-field">
+          <mat-form-field class="full-width">
+            <label for="fechaInicio">Fecha de Inicio:</label>
+            <input matInput type="date" id="fechaInicio" formControlName="fechaInicio">
+          </mat-form-field>
+        </div>
+        <div class="form-field">
+          <mat-form-field class="full-width">
+            <label for="fechaFin">Fecha de Fin:</label>
+            <input matInput type="date" id="fechaFin" formControlName="fechaFin">
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="form-field-full">
+        <mat-form-field class="full-width">
+          <label>Trabajadores:</label>
+          <mat-select multiple formControlName="trabajadores">
+            <mat-option value="Trabajador1">Trabajador 1</mat-option>
+            <mat-option value="Trabajador2">Trabajador 2</mat-option>
+            <mat-option value="Trabajador3">Trabajador 3</mat-option>
+            <!-- Agrega más opciones aquí -->
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="form-field-full">
+        <mat-form-field class="full-width">
+          <label for="descripcion">Descripción:</label>
+          <textarea matInput id="descripcion" formControlName="descripcion"></textarea>
+        </mat-form-field>
+      </div>
+    </div>
+    <button mat-raised-button color="primary" type="submit">Guardar</button>
+  </form>
+</mat-card>
+<app-footer></app-footer>
